@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+.navbar{
+  background-color: #fff !important;
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+  margin-bottom: 40px;
+}
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+.navbar a:hover{
+  color: #3498db !important;
+}
+.btn-get-started{
+  border-radius: 50px !important;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.5s;
+  color: #3498db;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+}
+.brand-name{
+  color: #3498db !important;
+  font-weight: bold;
+}
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1{
+margin: 0 0 10px 0;
+font-size: 48px;
+font-weight: 700;
+color: black;
+}
+#header h2{
+  color: #484848;
+  font-size: 24px;
+}
+#header .animated{
+ animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.footer{
+  background-color: lightgrey;
+  margin-bottom: 0%;
+}
+.imgsiz{
+  height:  180px !important;
+  width: 286px !important;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@media ( max-width: 991px ) {
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+  .menu_active{
+    font-weight: bold;
+    border-bottom: none;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .example {
+    display: none;
+  }
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  
+
+  .react-logo{
+    display: inline-block;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+
+    animation-name:rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  .react-logo , .react-logo:before , .react-logo:after{
+    position:absolute;
+    display: inline-block;
+    width:70px;
+    height:40px;
+    border-radius:50%;
+    border: solid #00d8ff;
+  }
+
+  .nucleo , .react-logo , .react-logo:before , .react-logo:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nucleo{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    background:#00d8ff;
+  }
+
+  .react-logo:before , .react-logo:after{
+    content:"";
+  }
+
+  .react-logo:after{
+    transform:rotate(-57deg);
+  }
+
+  .react-logo:before{
+    transform:rotate(57deg);
+  }
+  .vcenter-item{
+    display: flex;
+    align-items: center;
+}
+.box{
+  padding: 25px;
+  background: #abb1b8;
+width: 100%;
+}
+.wrapper{
+  /* background: #dbdfe5; */
+  min-height: 577px;
+}
+.wrapperimg{
+  margin-top: 200px;
+}
+
+  
+
+
+  @keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }
